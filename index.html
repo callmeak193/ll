@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+
+        body{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrQ0x1VXlaZDWYey7yYw_qKlpK7wEoDsmoIQ&s);
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f2f5;
+            color: #444;
+            display: flex;
+            justify-content: center;
+        }
+
+        header {
+            background-color: #0066cc;
+            color: #fff;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+            width: 100%;
+            margin-top: 70px;
+            justify-content: space-between;
+        }
+
+        .main-section {
+            width: 60%;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .main-section h1 {
+            font-size: 36px;
+            color: #0066cc;
+            margin-bottom: 20px;
+        }
+
+        .main-section p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Circular border for other images */
+        .main-section img {
+            margin-top: 20px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #0066cc;
+        }
+
+        .hidden-section {
+            display: none;
+        }
+
+        .visible-section {
+            display: block;
+        }
+
+        .menu-section {
+            width: 20%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: fixed;
+            right: 0;
+            top: 70px;
+        }
+
+        .menu-section ul {
+            list-style-type: none;
+        }
+
+        .menu-section ul li {
+            margin-bottom: 20px;
+        }
+
+        .menu-section ul li a {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            display: block;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-section ul li a:hover {
+            background-color: #00509e;
+            color: #fff;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        /* Updated CSS for square images */
+        #skills img,
+        #projects img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        /* Resume image without circle background */
+        #resume img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            margin-top: 20px;
+            border-radius: 0;
+            border: none;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label,
+        form input,
+        form textarea,
+        form button {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        form input,
+        form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        form button {
+            padding: 10px;
+            background-color: #0066cc;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        form button:hover {
+            background-color: #00509e;
+        }
+
+        /* Thank you message */
+        .thank-you {
+            display: none;
+            color: green;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>AK</h1>
+    </header>
+
+    <div class="content">
+        <div class="main-section">
+            <div id="about-me" class="visible-section">
+                <h1>Hi, I am Akshay</h1>
+                <p>About myself:</p>
+                <img src="ak.jpg" alt="Akshay's Picture">
+                <p>I am Akshay Nimbaragi, currently a final-year BCA student at BLDEA's association in Jamkhandi. I am very interested in coding, although I haven't started learning any particular language yet. I am excited to do something by using chatgpt!</p>
+            </div>
+
+            <div id="skills" class="hidden-section">
+                <h2>Skills</h2>
+                <ul>
+                    <li>C</li>
+                    <li>HTML & CSS</li>
+                    <li>Python</li>
+                </ul>
+                <img src="lang.jpg" alt="Skills Graphical Design">
+                <p style="color: red;">Note : I didn't have knowledge about HTML and CSS... I always use ChatGPT...</p>
+            </div>
+
+            <div id="projects" class="hidden-section">
+                <h2>Projects</h2>
+                <img src="logo.jpg" alt="Project Image">
+                <p style="color: red;">sorry currently my gym website is having some issues...so i did'nt add website link here...and don't worry we will fix it... </p>
+            </div>
+
+            <div id="resume" class="hidden-section">
+                <h2>Resume</h2>
+                <img src="res.jpg" alt="Resume Image">
+            </div>
+
+            <div id="feedback" class="hidden-section">
+                <h2>Feedback</h2>
+                <form id="feedback-form" action="#">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="feedback">Your Feedback:</label>
+                    <textarea id="feedback-text" name="feedback" rows="4" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+
+                <p class="thank-you">Thank you for your feedback, we will improve soon!</p>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showSection('about-me')">About Me</a></li>
+                    <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+                    <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+                    <li><a href="#" onclick="showSection('resume')">Resume</a></li>
+                    <li><a href="#" onclick="showSection('feedback')">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <script>
+        function showSection(section) {
+            // Hide all sections
+            document.querySelectorAll('.main-section > div').forEach(el => el.style.display = 'none');
+
+            // Show the selected section
+            document.getElementById(section).style.display = 'block';
+        }
+
+        // Handle form submission
+        document.getElementById('feedback-form').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent actual form submission
+
+            // Hide the form and show the thank-you message
+            document.querySelector('.thank-you').style.display = 'block';
+            document.getElementById('feedback-form').style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>
